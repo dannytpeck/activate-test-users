@@ -1,0 +1,18 @@
+{
+  "name": "work-projects",
+  "version": "1.0.0",
+  "description": "",
+  "main": "activate.js",
+  "dependencies": {
+    "csv-write-stream": "^2.0.0",
+    "moment": "^2.18.1",
+    "selenium-webdriver": "^3.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node activate.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
