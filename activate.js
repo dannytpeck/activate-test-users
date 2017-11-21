@@ -226,7 +226,7 @@ let activate_user = function(user_form) {
 };
 
 function saveData() {
-	fs.writeFile(finalTestUsersFilename, JSON.stringify(data, null, 4), function(err) {
+	fs.writeFile(finalTestUsersFilename, JSON.stringify(data, null, '\t'), function(err) {
 		if (err) {
 			console.log(err);
 			return;
