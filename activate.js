@@ -11,7 +11,7 @@ const driver = new webdriver.Builder()
 const data = require('./testusers.json');
 const finalTestUsersFilename = 'testusers-' + data.employerName + '-final.json';
 
-const loginPage = data.loginUrl;
+const loginPage = data.loginUrl + '/User/Signup.aspx?e=' + data.employerName;
 const settingsPage = data.loginUrl + '/controlpanel/roleadmin/settings.aspx';
 const logoutPage = data.loginUrl + '/logout.aspx';
 
