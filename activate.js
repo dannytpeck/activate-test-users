@@ -11,9 +11,9 @@ const driver = new webdriver.Builder()
 const data = require('./testusers.json');
 const finalTestUsersFilename = 'testusers-' + data.employerName + '-final.json';
 
-const loginPage = 'https://mywellmetrics.com/User/Signup.aspx?e=' + data.employerName;
-const settingsPage = 'https://mywellmetrics.com/controlpanel/roleadmin/settings.aspx';
-const logoutPage = 'https://mywellmetrics.com/logout.aspx';
+const loginPage = data.loginUrl + '/User/Signup.aspx?e=' + data.employerName;
+const settingsPage = data.loginUrl + '/controlpanel/roleadmin/settings.aspx';
+const logoutPage = data.loginUrl + '/logout.aspx';
 
 let usernames = [];
 let test_user_filename = '';
